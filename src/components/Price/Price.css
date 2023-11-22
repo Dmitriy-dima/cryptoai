@@ -5,15 +5,15 @@
   background: #1570ef;
   color: #fff;
   width: 100%;
+  padding: 20px;
 }
 
 .price_content {
   display: flex;
   margin: 80px 0 80px 0;
-  padding: 16px 120px 0;
   width: 100%;
   max-width: 1920px;
-  justify-content: center;  /* Change to center */
+  justify-content: center; /* Change to center */
   align-items: center; /* Change to center */
   flex-direction: column;
 }
@@ -39,7 +39,18 @@
   justify-content: center; /* Add this line */
 }
 
+.grid-mobile {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+
 .price_item {
+  display: flex;
+  flex-direction: column;
+  color: #1570ef;
   flex: 1;
   height: auto;
   width: 100%;
@@ -49,6 +60,7 @@
   border-radius: 12px;
   border: 1px solid #eaecf0;
   background: #f9fafb;
+  width: 100%;
 }
 
 .long_item {
@@ -57,7 +69,6 @@
   flex: 2;
 }
 
-/* Add this to your existing CSS */
 
 .buy_button {
   display: flex;
@@ -78,15 +89,15 @@
 }
 
 .buy_button:hover {
-  background-color: #45a049;
-}
-.price_item {
-  display: flex;
-  flex-direction: column;
-  color: #1570ef;
+  border: 1px solid #2e90fa;
+  background: #2e90fa;
 }
 
-.price_item_content{
+.buy_button:focus {
+  box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.price_item_content {
   display: flex;
   flex-direction: column;
   color: #1570ef;
@@ -116,9 +127,101 @@
 }
 
 .price_month_txt {
-  color: #98A2B3;
+  color: #98a2b3;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
+}
+
+
+/* Desktop view */
+@media screen and (min-width: 1920px) {
+}
+
+/* Laptop view */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  
+}
+
+
+/* Laptop view */
+@media screen and (min-width: 1040px) and (max-width: 1439px) {
+  .price_item p:first-child {
+    font-size: 19px;
+  }
+  
+  .price_item p:nth-child(2) {
+    font-size: 35px;
+
+  }
+  
+  .price_item p:last-child {
+    font-size: 14px;
+  }
+  
+  
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 1039px) {
+  .price_item p:first-child {
+    font-size: 19px;
+  }
+  
+  .price_item p:nth-child(2) {
+    font-size: 46px;
+
+  }
+  
+  .price_item p:last-child {
+    font-size: 14px;
+  }
+  
+  
+}
+
+/* Landscape phone view */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .grid {
+    display: none;
+  }
+
+  .grid-mobile {
+    display: flex;
+    gap: 16px;
+  }
+  .long_item {
+    max-width: none;
+  }
+}
+
+/* Portrait phone view */
+@media screen and (min-width: 361px) and (max-width: 539px) {
+  .grid {
+    display: none;
+  }
+
+  .grid-mobile {
+    display: flex;
+    gap: 16px;
+  }
+  .long_item {
+    max-width: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 360px) {
+  .grid {
+    display: none;
+  }
+
+  .grid-mobile {
+    display: flex;
+    gap: 16px;
+  }
+
+  .long_item {
+    max-width: none;
+  }
 }

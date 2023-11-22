@@ -1,35 +1,33 @@
 /* Import Tailwind CSS */
 @import "./styles/tailwind.css";
 
-/* Common styles for all views */
-body {
-  font-family: Inter;
-  background: #fff;
-}
 
 /* App.css or styles/tailwind.css */
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 /* Desktop view */
 @media screen and (min-width: 1920px) {
-  /* Your styles for 1920px and above go here */
+
 }
 
 /* Laptop view */
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  /* Your styles for 1440px to 1919px go here */
+
 }
 
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  /* Your styles for 768px to 1439px go here */
+
 }
 
 /* Landscape phone view */
 @media screen and (min-width: 540px) and (max-width: 767px) {
-  /* Your styles for 540px to 767px go here */
+
 }
 
 /* Portrait phone view */

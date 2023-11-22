@@ -1,7 +1,156 @@
-.reviews_container{
-    display: flex;
-    background: #fff;
-    width: 100vw;
-    height: 25vh;
+/* Reviews.css */
+.reviews_container {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.reviews_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1220px; 
+  margin: 80px 0 80px 0;
+}
+
+.reviews_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.reviews_header h2 {
+  color: var(--gray-800, #1d2939);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+
+.jchannel_btn_reviews {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid #1570ef;
+  background: #1570ef;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.jchannel_btn_reviews:hover{
+  border: 1px solid #2e90fa;
+  background: #2e90fa;
+}
+.jchannel_btn_reviews:focus{
+  box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.jchannel_btn_reviews img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.screenshots_grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll; /* Change auto to scroll */
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.screenshots_grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.screenshot_item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 100%;
+  max-width: 228px;
+  height: auto;
+}
+
+.screenshot_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  padding: 20px;
+  outline: none;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+  /* Laptop view */
+  @media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  }
+  
+  /* Tablet view */
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+
+  }
+  
+  /* Landscape phone view */
+  @media screen and (min-width: 540px) and (max-width: 767px) {
+
+
+    .reviews_header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .jchannel_btn_reviews {
+      margin-top: 16px; /* Add some space between the button and the header on smaller screens */
+    }
+  
+  }
+  
+  /* Portrait phone view */
+  @media screen and (max-width: 539px) {
+
+    .reviews_header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .jchannel_btn_reviews {
+      margin-top: 16px; /* Add some space between the button and the header on smaller screens */
+    }
   }
   

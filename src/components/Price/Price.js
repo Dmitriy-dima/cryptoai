@@ -70,6 +70,58 @@ const Price = () => (
           long
         />
       </div>
+      <div className="grid-mobile">
+        <PriceItem
+          blockchain="1 Blockchain"
+          price="$200"
+          description="You will have the opportunity to choose one blockchain"
+          long
+          showBuyButton
+        />
+        <PriceItem
+          blockchain="2 Blockchain"
+          price="$300"
+          description="You will have the opportunity to choose two blockchains"
+          long
+          showBuyButton
+        />
+        <PriceItem
+          blockchain="4 Blockchain"
+          price="$400"
+          description="You will have the opportunity to choose four blockchains"
+          long
+          showBuyButton
+        />
+
+        <PriceItem
+          blockchain="6 Blockchain"
+          price="$500"
+          description="You will have the opportunity to choose six blockchains"
+          long
+          showBuyButton
+        />
+        <PriceItem
+          blockchain="8 Blockchain"
+          price="$600"
+          description="You will have the opportunity to choose eight blockchains"
+          long
+          showBuyButton
+        />
+        <PriceItem
+          blockchain="8 Blockchain + NFT/Stakings"
+          price="$800"
+          description="You will have the opportunity to choose eight blockchains + NFT/Stakings Check"
+          long
+          showBuyButton
+        />
+        <PriceItem
+          blockchain="Lifetime full access with all updates"
+          price="$2000"
+          description="You will have the opportunity to get lifetime full access with all updates"
+          long
+          showBuyButton
+        />
+      </div>
     </div>
   </div>
 );

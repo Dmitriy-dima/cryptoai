@@ -1,6 +1,91 @@
-.faq_container{
-    display: flex;
-    background: #F2F4F7;
-    width: 100vw;
-    height: 30vh;
-  }
+.faq_container {
+  display: flex;
+  background: #f2f4f7;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.faq_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 80px 0 80px 0;
+  gap: 25px;
+}
+.faq_cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  gap:12px;
+}
+
+.faq_header {
+  align-self: stretch;
+  color: #1d2939;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+
+.faq_card_header img {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.faq_card {
+  display: flex;
+  min-width: 250.75px;
+  padding: 20px;
+  max-width: 1920px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #fff;
+  color: #1d2939;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.faq_card_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq_card_header span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.faq_answer {
+  display: flex;
+  max-width: 640px;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.faq_text {
+  color: #667085;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  max-width: 640px;
+  flex: 1 0 0;
+}

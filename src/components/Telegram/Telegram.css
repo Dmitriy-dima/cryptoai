@@ -1,7 +1,70 @@
-.telegram_container{
-    display: flex;
-    background: #1570EF;
-    width: 100vw;
-    height: 15vh;
-  }
-  
+.telegram_container {
+  display: flex;
+  background: #1570EF url("../../images/svg/telegram_section.svg") no-repeat;
+  background-size: 708px 360px;
+  background-position: 100% 20%; /* adjust this to move the background image */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.telegram_content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* center items */
+  width: 100%;
+  margin: 80px 0 80px 0;
+}
+
+.telegram_content_txt{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; /* align items to the start */
+  gap: 32px;
+  z-index: 2;
+  margin-right: 40%; /* move content a little bit to the left */
+}
+.telegram_header {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+
+}
+
+.join_button {
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 0.5px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+  color: #FFF;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.join_button:hover{
+  border: 0.5px solid #FFF;
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.join_button:focus{
+  border: 0.5px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.telegram_container img {
+  display: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}

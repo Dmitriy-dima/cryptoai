@@ -77,12 +77,11 @@ const blockchainData = [
 ];
 
 const Income = () => (
-    <div className="income_content">
-      <div className="header-cards">
-        On which blockchains
-        <br /> can you get the maximum
-        <br /> income?
-      </div>
+  <div className="income_content">
+    <div className="header-cards">
+      On which blockchains
+      <br /> can you get the maximum
+      <br /> income?
       <div className="card-grid">
         {blockchainData.map((blockchain) => (
           <div key={blockchain.id} className="card">
@@ -97,6 +96,7 @@ const Income = () => (
         ))}
       </div>
     </div>
-  );  
+  </div>
+);
 
 export default Income;

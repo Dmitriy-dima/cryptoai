@@ -1,41 +1,54 @@
-/* Header.css */
+/* Footer.css */
 
-.header {
+.footer {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  padding: 16px 120px;
+  flex-direction: column;
+  padding: 16px 0;
   flex: 1;
   background: #fff;
-  transition: border-bottom 0.3s ease-in-out;
 }
 
-.header.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* Make it full width when sticky */
-  z-index: 1000;
-  border-bottom: 1px solid #eaecf0;
-}
-
-.header_content {
+.footer_content {
   display: flex;
   width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  
+  border-bottom: 1px solid #eaecf0;
+  padding: 24px;
 }
+
+.footer_under {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #98a2b3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding: 24px 24px 6px 24px;
+}
+
+.footer_links {
+  display: flex;
+  gap: 32px;
+}
+
 .logo {
   display: flex;
   align-items: center;
   margin-right: 40px;
-  min-width: 97px
+  min-width: 97px;
 }
-.header_logo_links {
+
+.footer_logo_links {
   display: flex;
 }
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -44,7 +57,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .btn-join-community {
@@ -63,21 +76,23 @@
   line-height: 24px;
   transition: background 0.3s, color 0.3s;
 }
-.header_btn_container {
+
+.footer_btn_container {
   display: flex;
   position: relative;
   float: right;
 }
+
 .btn-join-community:hover {
   background: #1570ef;
   color: #fff;
 }
 
-
 .btn-join-community img {
   width: 100%;
   max-width: 20px;
 }
+
 .btn-join-community:hover img {
   filter: brightness(0) invert(1);
 }
@@ -97,13 +112,12 @@
   /* Your styles for 768px to 1439px go here */
   .btn-join-community img {
     width: auto; /* Change this line */
-    max-width: 20px; 
+    max-width: 20px;
   }
   .btn-join-community {
     width: 100%;
     max-width: 200px;
   }
-  
 }
 
 /* Landscape phone view */
@@ -113,28 +127,22 @@
     display: none;
   }
   .btn-join-community img {
-    width: 10px; 
+    width: auto; /* Change this line */
     max-width: 20px;
   }
   .btn-join-community {
     width: 100%;
-    max-width: 250px;
-  }
-  .header_btn_txt {
-    font-size: 16px;
+    max-width: 200px;
   }
 }
 
 /* Portrait phone view */
 @media screen and (max-width: 539px) {
-  .header_btn_txt {
+  .footer_btn_txt {
     display: none;
   }
   .nav-links {
     display: none;
-  }
-  .header_btn_container {
-    margin-left: 50%;
   }
   .btn-join-community img {
     width: auto; /* Change this line */
@@ -144,5 +152,4 @@
     width: 75%;
     max-width: 200px;
   }
-
 }

@@ -9,6 +9,7 @@ import Price from "./components/Price/Price.js";
 import Reviews from "./components/Reviews/Reviews.js";
 import FAQ from "./components/FAQ/FAQ.js";
 import Telegram from "./components/Telegram/Telegram.js";
+import Footer from "./components/Footer/Footer.js";
 import "./App.css";
 
 const sections = [
@@ -33,6 +34,9 @@ const App = () => (
         {getSectionComponent(section)}
       </Section>
     ))}
+
+    {/* Footer */}
+    <Footer />
   </div>
 );
 

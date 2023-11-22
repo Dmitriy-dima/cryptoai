@@ -28,7 +28,7 @@ function Section({ id, children }) {
 
   return (
     <section
-      className={`sections w-full ${isVisible ? "active" : ""}`}
+      className={`sections min-w-full max-w-screen-md mx-auto ${isVisible ? "active" : ""}`}
       id={id}
     >
       <div className={`${containerClassName} ${isVisible ? "fade-in" : ""}`}>

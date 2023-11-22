@@ -1,13 +1,19 @@
 /* index.css */
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+    display: block;
+    height: auto;
     background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    font-family: Inter;
+    overflow-x: hidden;
   }
   
   .app-container {
-    max-width: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
