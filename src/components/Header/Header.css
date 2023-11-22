@@ -1,0 +1,152 @@
+/* Header.css */
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 120px;
+  flex: 1;
+  background: #fff;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make it full width when sticky */
+  z-index: 1000;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.header_content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.header_logo_links {
+  display: flex;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #475467;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.btn-join-community {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #1570ef;
+  color: #1570ef;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  transition: background 0.3s, color 0.3s;
+}
+.header_btn_container {
+  display: flex;
+  position: relative;
+  float: right;
+}
+.btn-join-community:hover {
+  background: #1570ef;
+  color: #fff;
+}
+
+
+.btn-join-community img {
+  width: 100%;
+  max-width: 20px;
+}
+.btn-join-community:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Desktop view */
+@media screen and (min-width: 1920px) {
+  /* Your styles for 1920px and above go here */
+}
+
+/* Laptop view */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  /* Your styles for 1440px to 1919px go here */
+}
+
+/* Tablet view */
+@media screen and (min-width: 1179px) and (max-width: 1439px) {
+  /* Your styles for 768px to 1439px go here */
+  .btn-join-community img {
+    width: auto; /* Change this line */
+    max-width: 20px; 
+  }
+  .btn-join-community {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+}
+
+/* Landscape phone view */
+@media screen and (min-width: 540px) and (max-width: 1078px) {
+  /* Your styles for 540px to 767px go here */
+  .nav-links {
+    display: none;
+  }
+  .btn-join-community img {
+    width: auto; /* Change this line */
+    max-width: 20px;
+  }
+  .btn-join-community {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Portrait phone view */
+@media screen and (max-width: 539px) {
+  .header_btn_txt {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .header_btn_container {
+    margin-left: 50%;
+  }
+  .btn-join-community img {
+    width: auto; /* Change this line */
+    max-width: 20px;
+  }
+  .btn-join-community {
+    width: 75%;
+    max-width: 200px;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make it full width when sticky */
+    z-index: 1000;
+    border-bottom: 1px solid #eaecf0;
+  }
+}

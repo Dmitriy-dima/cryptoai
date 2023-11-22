@@ -1,0 +1,295 @@
+/* Start.css */
+
+.start_content {
+  display: flex;
+  align-items: row;
+  flex-direction: row;
+  gap: 24px;
+  margin: 80px 0 80px 150px;
+}
+.badge {
+  display: flex;
+  padding: 4px 12px 4px 4px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  background: #eff8ff;
+  mix-blend-mode: multiply;
+  max-width: 301px;
+}
+
+.badge-base {
+  display: flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #1570ef;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.badge-text {
+  margin-right: 8px; /* Adjust spacing if needed */
+}
+
+.badge-message {
+  color: #1570ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.start-image {
+  max-width: 768px;
+  width: 100%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.crypto-ai-title {
+  color: #1d2939;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -2.5px;
+}
+
+.crypto-ai-description {
+  color: #667085;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 492px;
+  margin-top: 16px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.buy-software-button,
+.how-it-works-button {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.buy-software-button {
+  border: 1px solid #1570ef;
+  background: #1570ef;
+  color: #fff;
+}
+
+.buy-software-button:hover {
+  border: 1px solid  #2E90FA;
+  background: #2E90FA;
+}
+
+.buy-software-button:focus {
+  box-shadow: 0px 0px 0px 4px #D1E9FF, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.how-it-works-button {
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  color: #344054;
+}
+.how-it-works-button:hover {
+  border: 1px solid  #D0D5DD;
+  background: #F9FAFB;
+}
+
+.how-it-works-button:focus {
+  box-shadow: 0px 0px 0px 4px #F2F4F7, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.button-icon {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  /* Add more styles or adjust as needed */
+}
+
+.compatible-text {
+  color: #98a2b3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 32px 0 16px 0; /* Adjust spacing as needed */
+}
+
+.compatible-cards {
+  display: flex;
+  gap: 8px;
+}
+
+.compatible-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #98a2b3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 16px 20px;
+  gap: 10px;
+  border-radius: 12px;
+  background: #f2f4f7;
+}
+
+.compatible-icon {
+  max-width: 40px;
+  width: 100%;
+}
+
+.compatible-text-mobile {
+  color: #98a2b3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 32px 0 16px 0; /* Adjust spacing as needed */
+  display: none;
+}
+
+.compatible-cards-mobile {
+  gap: 8px;
+  display: none;
+}
+
+/* Desktop view */
+@media screen and (min-width: 1920px) {
+}
+
+/* Laptop view */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .start_content {
+    flex-direction: row; /* Keep it horizontal */
+    gap: 24px; /* Adjust spacing */
+  }
+}
+
+
+/* Laptop view */
+@media screen and (min-width: 1040px) and (max-width: 1439px) {
+  .start_content {
+    flex-direction: row; /* Keep it horizontal */
+    gap: 24px; /* Adjust spacing */
+  }
+  .compatible-card {
+    font-size: 14px;
+  }
+  .compatible-icon {
+    width: 30px;
+  }
+  .start-image {
+    width: 55%;
+  }
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 1039px) {
+  .start_content {
+    flex-direction: column; /* Stack them vertically */
+    gap: 16px; /* Adjust spacing */
+    margin: 80px 0 80px 150px;
+  }
+
+  .compatible-text{
+    display: none;
+  }
+  
+  .compatible-cards {
+    display: none;
+  }
+
+  .compatible-text-mobile {
+    display: block;
+    text-align: left;
+  }
+  
+  .compatible-cards-mobile {
+    display: flex;
+  }
+
+  .start-image {
+    margin-top: 32px;
+  }
+
+}
+
+/* Landscape phone view */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .start_content {
+    flex-direction: column; /* Stack them vertically */
+    gap: 16px; /* Adjust spacing */
+    margin: 80px 0 80px 150px;
+  }
+
+  .compatible-text-mobile {
+    display: flex;
+    text-align: left;
+  }
+  
+  .compatible-cards-mobile {
+    display: flex;
+  }
+
+  .compatible-text{
+    display: none;
+  }
+  
+  .compatible-cards {
+    display: none;
+  }
+
+  .start-image {
+    margin-top: 32px;
+  }
+
+}
+
+/* Portrait phone view */
+@media screen and (max-width: 539px) {
+  .start_content {
+    flex-direction: column; /* Stack them vertically */
+    gap: 16px; /* Adjust spacing */
+    margin: 80px 0 80px 350px;
+  }
+  .compatible-text{
+    display: none;
+  }
+  
+  .compatible-cards {
+    display: none;
+  }
+
+  .compatible-text-mobile {
+    display: block;
+    text-align: left;
+  }
+  
+  .compatible-cards-mobile {
+    display: flex;
+  }
+
+  .start-image {
+    margin-top: 32px;
+  }
+}

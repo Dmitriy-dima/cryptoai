@@ -1,0 +1,60 @@
+.sections{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    box-sizing: border-box;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 0 0 0 0;
+}
+.sections.active {
+    opacity: 1;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Desktop view */
+@media screen and (min-width: 1920px) {
+    /* Your styles for 1920px and above go here */
+  }
+  
+  /* Laptop view */
+  @media screen and (min-width: 1440px) and (max-width: 1919px) {
+    /* Your styles for 1440px to 1919px go here */
+  }
+  
+  /* Tablet view */
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    /* Your styles for 768px to 1439px go here */
+    .sections{
+        flex-direction: column;
+    }
+  }
+  
+  /* Landscape phone view */
+  @media screen and (min-width: 540px) and (max-width: 767px) {
+    /* Your styles for 540px to 767px go here */
+    .sections{
+        flex-direction: column;
+    }
+  }
+  
+  /* Portrait phone view */
+  @media screen and (max-width: 539px) {
+  
+  }
+  

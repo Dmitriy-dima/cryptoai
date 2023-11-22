@@ -1,38 +1,38 @@
+/* Import Tailwind CSS */
+@import "./styles/tailwind.css";
+
+/* Common styles for all views */
+body {
+  font-family: Inter;
+  background: #fff;
+}
+
+/* App.css or styles/tailwind.css */
 .App {
-  text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Desktop view */
+@media screen and (min-width: 1920px) {
+  /* Your styles for 1920px and above go here */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Laptop view */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  /* Your styles for 1440px to 1919px go here */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  /* Your styles for 768px to 1439px go here */
 }
 
-.App-link {
-  color: #61dafb;
+/* Landscape phone view */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  /* Your styles for 540px to 767px go here */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Portrait phone view */
+@media screen and (max-width: 539px) {
+
 }

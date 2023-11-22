@@ -1,0 +1,48 @@
+.works_container {
+  display: flex;
+  background: #1570ef;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+ }
+ 
+ .works_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  margin: 80px 0 80px 0;
+  padding: 16px 120px 0 120px;
+  width: 100%;
+  max-width: 1920px;
+ }
+ 
+ .video_player {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 1920px;
+ }
+ 
+ 
+ .video_player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+ 
+ .works-header {
+  align-self: stretch;
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.96px;
+ }
+ 

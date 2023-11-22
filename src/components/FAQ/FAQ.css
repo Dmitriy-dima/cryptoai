@@ -1,0 +1,6 @@
+.faq_container{
+    display: flex;
+    background: #F2F4F7;
+    width: 100vw;
+    height: 30vh;
+  }
