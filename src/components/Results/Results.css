@@ -34,6 +34,7 @@
   justify-content: space-between;
   align-self: flex-start;
   flex-direction: column;
+  gap: 16px;
 }
 
 .section_header_top {
@@ -101,19 +102,27 @@
   flex-direction: column;
 }
 
-.results_cards::-webkit-scrollbar {
-  display: none;
-}
 
 .latest_findings{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+.latest_findings_content{
   overflow-x: auto; 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+.latest_findings_content::-webkit-scrollbar {
+  display: none;
+}
+.center_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 
 .latest_findings h3 {
   margin: 40px 0 16px 0;
@@ -122,6 +131,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+  align-self: flex-start;
+  position: relative;
 }
 .latest_finding_content {
   display: flex;

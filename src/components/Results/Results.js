@@ -53,39 +53,43 @@ const Results = () => (
       </div>
       <div className="section_findings">
         <div className="latest_findings">
+          <div className="center_container">
+            <div className="latest_findings_content">
+            <div>
           <h3>Latest findings from our customers</h3>
-          <div className="latest_findings_content">
-            <div className="results_cards">
-              <div className="card_grid">
-                {data.map((item, index) => (
-                  <div className="result_card" key={index}>
-                    <div className="card_row">
-                      <div className="card_left">
-                        <img src={item.imgSrc} alt="Crypto Icon" />
-                        <p>{item.name}</p>
+          </div>
+              <div className="results_cards">
+                <div className="card_grid">
+                  {data.map((item, index) => (
+                    <div className="result_card" key={index}>
+                      <div className="card_row">
+                        <div className="card_left">
+                          <img src={item.imgSrc} alt="Crypto Icon" />
+                          <p>{item.name}</p>
+                        </div>
+                        <div className="card_right">
+                          <p>{item.timeAgo}</p>
+                        </div>
                       </div>
-                      <div className="card_right">
-                        <p>{item.timeAgo}</p>
+                      <div className="card_row">
+                        <div className="card_left">
+                          <p>Server</p>
+                        </div>
+                        <div className="card_right">
+                          <p>{item.count}</p>
+                        </div>
+                      </div>
+                      <div className="card_row">
+                        <div className="card_left">
+                          <p>Amount</p>
+                        </div>
+                        <div className="card_right card_amount">
+                          <p>{item.amount}</p>
+                        </div>
                       </div>
                     </div>
-                    <div className="card_row">
-                      <div className="card_left">
-                        <p>Server</p>
-                      </div>
-                      <div className="card_right">
-                        <p>{item.count}</p>
-                      </div>
-                    </div>
-                    <div className="card_row">
-                      <div className="card_left">
-                        <p>Amount</p>
-                      </div>
-                      <div className="card_right card_amount">
-                        <p>{item.amount}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>

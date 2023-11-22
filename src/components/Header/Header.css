@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 16px 120px;
+  padding: 16px 20px;
   flex: 1;
   background: #fff;
   transition: border-bottom 0.3s ease-in-out;
@@ -25,16 +25,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  
 }
 .logo {
   display: flex;
   align-items: center;
   margin-right: 40px;
-  min-width: 97px
+  min-width: 87px
 }
 .header_logo_links {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .nav-links {
   display: flex;
@@ -82,6 +84,36 @@
   filter: brightness(0) invert(1);
 }
 
+.hamburger_menu {
+  min-width: 24px;
+  cursor: pointer;
+}
+.modal-menu {
+  display: inline-block;
+  position: fixed;
+  top: 80px;
+  left:0px;
+  z-index: 999;
+  width: 100%;
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.5s ease-in-out; /* Animate the opacity */
+}
+
+.modal-menu.open {
+  opacity: 1; /* End visible */
+}
+.modal-menu_content{
+  display: flex;
+  width: 100%;
+  height: 624px;
+  padding: 32px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 20px;
+  background: #fff;
+}
+
 /* Desktop view */
 @media screen and (min-width: 1920px) {
   /* Your styles for 1920px and above go here */
@@ -112,10 +144,6 @@
   .nav-links {
     display: none;
   }
-  .btn-join-community img {
-    width: 10px; 
-    max-width: 20px;
-  }
   .btn-join-community {
     width: 100%;
     max-width: 250px;
@@ -123,18 +151,21 @@
   .header_btn_txt {
     font-size: 16px;
   }
+  .modal-menu_content{
+    height: 540px;
+  }
+  .header_content{
+    justify-content: space-between;
+  }
 }
 
 /* Portrait phone view */
-@media screen and (max-width: 539px) {
+@media screen and (min-width: 361px) and (max-width: 539px) {
   .header_btn_txt {
     display: none;
   }
   .nav-links {
     display: none;
-  }
-  .header_btn_container {
-    margin-left: 50%;
   }
   .btn-join-community img {
     width: auto; /* Change this line */
@@ -144,5 +175,43 @@
     width: 75%;
     max-width: 200px;
   }
+  .header_logo_links {
+    position: relative;
+    margin-left: 25px;
+  }
+  .modal-menu_content{
+    height: 540px;
+  }
+  .header_content{
+    justify-content: space-between;
+  }
+  }
+@media screen and (min-width: 0px) and (max-width: 360px) {
 
+  .header_btn_txt {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .btn-join-community img {
+    width: auto; /* Change this line */
+    max-width: 20px;
+  }
+  .btn-join-community {
+    width: 75%;
+    max-width: 200px;
+  }
+  .header_logo_links {
+    position: relative;
+    margin-left: 25px;
+  }
+
+  .modal-menu_content{
+    height: 460px;
+  }
+  .header_content{
+    justify-content: space-between;
+  }
 }

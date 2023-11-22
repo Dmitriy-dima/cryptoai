@@ -46,7 +46,10 @@
 }
 
 .footer_logo_links {
-  display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .nav-links {
