@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/cryptoai/static/css/main.f6aa959e.css",
+    "main.css": "/cryptoai/static/css/main.1f8e543b.css",
     "main.js": "/cryptoai/static/js/main.658a6d6f.js",
+    "static/media/Inter-Regular.ttf": "/cryptoai/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
     "static/media/Mac.png": "/cryptoai/static/media/Mac.ed6fe8e19a72e578a355.png",
     "static/media/Reviews_3.png": "/cryptoai/static/media/Reviews_3.dd6f4a98867fdbd7b566.png",
     "static/media/Reviews_4.png": "/cryptoai/static/media/Reviews_4.dd6f4a98867fdbd7b566.png",
@@ -30,11 +31,11 @@
     "static/media/plus.svg": "/cryptoai/static/media/plus.bae85953549d756f2b15781318b892b1.svg",
     "static/media/minus.svg": "/cryptoai/static/media/minus.c27a014ef4629c3a9645349fc32db598.svg",
     "static/media/menu.svg": "/cryptoai/static/media/menu.122e2f0232c070455e12623faac2f01f.svg",
-    "main.f6aa959e.css.map": "/cryptoai/static/css/main.f6aa959e.css.map",
+    "main.1f8e543b.css.map": "/cryptoai/static/css/main.1f8e543b.css.map",
     "main.658a6d6f.js.map": "/cryptoai/static/js/main.658a6d6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6aa959e.css",
+    "static/css/main.1f8e543b.css",
     "static/js/main.658a6d6f.js"
   ]
 }
