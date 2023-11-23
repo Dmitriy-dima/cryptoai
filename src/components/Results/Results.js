@@ -30,7 +30,6 @@ const data = [
 ];
 
 const Results = () => (
-  <div className="results_container">
     <div className="results_content">
       <div className="section_header">
         <div className="section_header_top">
@@ -96,7 +95,6 @@ const Results = () => (
         </div>
       </div>
     </div>
-  </div>
 );
 
 export default Results;

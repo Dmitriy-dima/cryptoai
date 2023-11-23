@@ -12,10 +12,10 @@
   display: flex;
   margin: 80px 0 80px 0;
   width: 100%;
-  max-width: 1920px;
-  justify-content: center; /* Change to center */
-  align-items: center; /* Change to center */
+  justify-content: center; 
+  align-items: center; 
   flex-direction: column;
+  max-width: 1920px;
 }
 
 .prices {
@@ -36,7 +36,7 @@
   display: flex;
   gap: 24px;
   width: 100%;
-  justify-content: center; /* Add this line */
+  justify-content: center; 
 }
 
 .grid-mobile {

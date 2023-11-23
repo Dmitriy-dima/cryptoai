@@ -1,6 +1,5 @@
 {
   "name": "cryptoai",
-  "homepage": "https://github.com/Dmitriy-dima/cryptoai/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

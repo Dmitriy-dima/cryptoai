@@ -3,6 +3,7 @@
   background: #fff;
   width: 100%;
   padding: 20px;
+  max-width: 1650px;
 }
 
 
@@ -231,6 +232,18 @@
       align-self: flex-start;
       top: 32px;
     }
+
+    .section_header_txt h2 {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 38px;
+    }
+
+    .results_content {
+      margin: 60px 0 60px 0;
+    }
+    
 
   }
   

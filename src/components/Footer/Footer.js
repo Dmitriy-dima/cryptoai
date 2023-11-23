@@ -70,6 +70,8 @@ function Footer() {
             </button>
           </div>
         </div>
+      </footer>
+      <div className="footer_under_container">
         <div className="footer_under">
           <span>© 2023 Crypto AI</span>
           <div className="footer_links">
@@ -77,7 +79,7 @@ function Footer() {
             <a href="#privacy">Privacy</a>
           </div>
         </div>
-      </footer>
+      </div>
       {isModalOpen && (
         <div className={`modal-menu ${isModalOpen ? "open" : ""}`}>
           <div className="modal-menu_content">

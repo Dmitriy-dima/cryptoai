@@ -93,8 +93,7 @@
 /* Laptop view */
 @media screen and (min-width: 1040px) and (max-width: 1439px) {
   .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: none; /* Get rid of that maximum width */
+    max-width: none; 
   }
 }
 
@@ -102,7 +101,7 @@
 @media screen and (min-width: 768px) and (max-width: 1039px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: none; /* Get rid of that maximum width */
+    max-width: none; 
   }
 }
 
@@ -118,7 +117,7 @@
   }
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: none; /* Get rid of that maximum width */
+    max-width: none; 
   }
 }
 
@@ -132,11 +131,11 @@
     line-height: 38px; /* 126.667% */
   }
   .card-grid {
-    max-width: none; /* Remove the maximum width on smaller screens */
+    max-width: none; 
   }
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
-    max-width: none; /* Get rid of that maximum width */
+    max-width: none; 
   }
 .income_content {
     display: flex;
@@ -155,11 +154,11 @@
     line-height: 38px; /* 126.667% */
   }
   .card-grid {
-    max-width: none; /* Remove the maximum width on smaller screens */
+    max-width: none; 
   }
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
-    max-width: none; /* Get rid of that maximum width */
+    max-width: none;
   }
 .income_content {
     display: flex;
