@@ -11,10 +11,11 @@ const PriceItem = ({ blockchain, price, description, long, showBuyButton }) => (
         <span className="price_month_txt">/ month</span>
       </p>
       <p>{description}</p>
-      {long && showBuyButton && <button className="buy_button">Buy</button>}
+      {showBuyButton && <button className="buy_button">Buy</button>}
     </div>
   </div>
 );
+
 
 const Price = () => (
   <div className="price_content">
@@ -27,24 +28,28 @@ const Price = () => (
             price: "$200",
             description:
               "You will have the opportunity to choose one blockchain",
+            showBuyButton: true,
           },
           {
             blockchain: "2 Blockchain",
             price: "$300",
             description:
               "You will have the opportunity to choose two blockchains",
+            showBuyButton: true,
           },
           {
             blockchain: "4 Blockchain",
             price: "$400",
             description:
               "You will have the opportunity to choose four blockchains",
+            showBuyButton: true,
           },
           {
             blockchain: "6 Blockchain",
             price: "$500",
             description:
               "You will have the opportunity to choose six blockchains",
+            showBuyButton: true,
           },
         ].map((item, i) => (
           <PriceItem key={i} {...item} />
@@ -55,6 +60,7 @@ const Price = () => (
           blockchain="8 Blockchain"
           price="$600"
           description="You will have the opportunity to choose eight blockchains"
+          showBuyButton
         />
         <PriceItem
           blockchain="8 Blockchain + NFT/Stakings"
@@ -67,6 +73,7 @@ const Price = () => (
           blockchain="Lifetime full access with all updates"
           price="$2000"
           description="You will have the opportunity to get lifetime full access with all updates"
+          showBuyButton
           long
         />
       </div>

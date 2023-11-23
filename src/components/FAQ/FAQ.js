@@ -59,7 +59,7 @@ const FAQ = () => {
         <h2 className="faq_header">FAQs</h2>
         {faqData.map((faq, index) => (
           <div
-            className="faq_card"
+            className={`faq_card ${expanded.includes(index) ? 'faq_card_expanded active' : ''}`}
             key={index}
             onClick={() => handleToggle(index)}
           >

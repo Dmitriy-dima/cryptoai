@@ -50,6 +50,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+  transition: color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover{
+  color: #98A2B3;
 }
 
 .btn-join-community {

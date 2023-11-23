@@ -72,6 +72,7 @@
 
 .buy_button {
   display: flex;
+  opacity: 0;
   padding: 10px 18px;
   justify-content: center;
   align-items: center;
@@ -86,6 +87,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+  transition: opacity 0.3s, background 0.3s, color 0.3s;
 }
 
 .buy_button:hover {
@@ -95,6 +97,10 @@
 
 .buy_button:focus {
   box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.price_item_content:hover .buy_button {
+  opacity: 1;
 }
 
 .price_item_content {
@@ -195,6 +201,9 @@
   .long_item {
     max-width: none;
   }
+  .buy_button {
+    opacity: 1;
+  }
 }
 
 /* Portrait phone view */
@@ -210,6 +219,9 @@
   .long_item {
     max-width: none;
   }
+  .buy_button {
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 360px) {
   .grid {
@@ -223,5 +235,8 @@
 
   .long_item {
     max-width: none;
+  }
+  .buy_button {
+    opacity: 1;
   }
 }
