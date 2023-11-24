@@ -6,7 +6,7 @@ import "./Price.css";
 
 Modal.setAppElement("#root");
 
-const API_KEY = "c33fff7e-67de-4013-b96e-4d7921786763";
+const API_KEY = process.env.API_KEY;
 
 const BLOCKCHAINS = [
   { name: "BTC", img: require("../../images/Icons/btc.svg").default },
