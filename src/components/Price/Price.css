@@ -99,7 +99,7 @@
   box-shadow: 0px 0px 0px 4px #d1e9ff, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
-.price_item_content:hover .buy_button {
+.price_item:hover .buy_button {
   opacity: 1;
 }
 
@@ -140,6 +140,80 @@
   line-height: 20px; /* 142.857% */
 }
 
+.blockchain-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:none;
+  z-index: 1002;
+}
+.blockchain-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1002;
+}
+
+
+.blockchain-modal_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 568px;
+  width: 100%;
+  overflow-y: auto;
+  
+}
+
+.blockchain-modal_content div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.blockchain-modal_content .blockchain-item:hover {
+  background: #f0f0f0;
+}
+.blockchain-modal_content .blockchain-item{
+  cursor: pointer;
+}
+.blockchain-modal_content div.selected:hover {
+  background: #d0d0d0;
+}
+
+.blockchain-modal_content img {
+  width: 30px;
+  height: 30px;
+}
+
+.blockchain-modal_content button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.blockchain-modal_content button:hover {
+  background: #0056b3;
+}
 
 /* Desktop view */
 @media screen and (min-width: 1920px) {
