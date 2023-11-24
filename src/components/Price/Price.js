@@ -45,10 +45,6 @@ const PriceItem = ({
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = (image) => {
-    setModalIsOpen(true);
-  };
-
   const closeModal = () => {
     setModalIsOpen(false);
   };
