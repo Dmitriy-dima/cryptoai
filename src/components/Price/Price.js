@@ -195,6 +195,7 @@ const PriceItem = ({
           <div className="blockchain-modal_content">
             <h2>Select Blockchains</h2>
             {renderBlockchains()}
+            <p>Price: {price}</p>
             <button onClick={handlePayClick}>Pay</button>
           </div>
         </Modal>
