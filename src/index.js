@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-require('dotenv').config();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+const root = document.getElementById('root');
+
+ReactDOM.render(
   <React.StrictMode>
     <div className="app-container">
       <App />
     </div>
   </React.StrictMode>,
+  root
 );
